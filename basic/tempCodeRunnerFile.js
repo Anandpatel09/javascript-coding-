@@ -1,10 +1,14 @@
-function palindrom(str){
-//     let palin=str.split("").reverse().join("");
+function largestNumber(arr){
+//     let largest =arr[0];
 
-//     if (str === palin) {
-//         console.log("Palindrome");
-//     } else {
-//         console.log("Not Palindrome");
+//     for(let i=0;i<arr.length;i++){
+         
+//         if (largest < arr[i]){
+//             largest= arr[i]
+//         }
 //     }
+//     return largest
+
 // }
-// palindrom("anand patel")
+
+// console.log(largestNumber([7,9,3,2,8,9,3]))
