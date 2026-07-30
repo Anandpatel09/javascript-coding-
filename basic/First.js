@@ -23,3 +23,12 @@ function largestNumber(arr){
 return Math.max(...arr)
 }
 console.log(largestNumber([7,9,3,2,8,9,3]))
+
+
+// using reduce
+
+function largestNumber(arr){
+return arr.reduce((max,current) =>current > max ? current : max)
+}
+console.log(largestNumber([7,9,3,2,8,9,3]))
+
