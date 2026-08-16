@@ -55,3 +55,37 @@
 // }
 // const a=5
 // console.log(rec(a));
+
+
+// Armstrong number 
+
+// function Armstr(a){
+//     let num=a;
+//   let sum=0;
+//   let digit= a.toString().length;
+
+//   let temp;
+//     while(a>0){
+//    temp = a%10;
+// //    sum += temp**digit;
+// sum +=Math.pow(temp,digit)
+// a=Math.floor(a/10)
+
+
+//     }
+
+//     if(sum === num){
+
+//         console.log("Number is palendrom ",sum);
+        
+//     }
+//     else{
+        
+//         console.log("Number is Not palendrom ",sum);
+//     }
+  
+// }
+
+// Armstr(158);
+
+
