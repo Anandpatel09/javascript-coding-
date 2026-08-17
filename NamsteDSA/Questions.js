@@ -67,3 +67,29 @@
 // }
 // let arr = [3, -5, 7, -2, -1, 8, 34, 2]
 // console.log(SmallestNumber(arr))
+
+
+
+//5) Find the second largest Element in the Array
+// function SecondLargest(arr) {
+//     // let max = arr[0];
+//     // or
+// we can put checks also if array has only one elelmentin array.
+//     let max = -Infinity;
+//     let secMax = -Infinity;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             secMax = max;
+//             max = arr[i];
+//         }
+//         else if (arr[i] > secMax && arr[i] != max) {
+//             secMax = arr[i];
+//         }
+//     } return secMax;
+// }
+// let arr = [10, 20, 8, 9, 3, 5, 20]
+// console.log(SecondLargest(arr))
+
+
+
