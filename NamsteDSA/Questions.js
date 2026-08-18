@@ -92,4 +92,101 @@
 // console.log(SecondLargest(arr))
 
 
+// Star Pattern :-
+// 1)
+// * * * *
+// * * * *
+// * * * *
+// * * * *
 
+// function square() {
+//     for (let i = 0; i < 4; i++) {
+
+//         for (let j = 0; j < 4; j++) {
+//             // process.stdout.write("* ")
+//         }
+//         console.log();
+//     }
+// }
+// square();
+
+// or
+
+// function square() {
+//     for (let i = 0; i < 4; i++) {
+//         let row = "o";
+//         for (let j = 0; j < 4; j++) {
+
+//             row = row + "* ";
+//         }
+//         console.log(row);
+//     }
+// }
+// square();
+
+//2)
+// *
+// * *
+// * * *
+// * * * *
+
+// function star() {
+//     for (let i = 0; i < 4; i++) {
+//         for (j = 0; j <= i; j++) {
+//             process.stdout.write("* ")
+//         }
+//         console.log();
+//     }
+// }
+// star();
+
+//3)
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+// function pat3(n) {
+//     for (let i = 0; i < n; i++) {
+//         let x = "";
+//         for (let j = 0; j <= i; j++) {
+//             x = x + (j + 1) + " ";
+//         }
+//         console.log(x);
+//     }
+// }
+// pat3(5)
+
+//4)
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+// 5 5 5 5 5
+
+// let n = 5
+// for (let i = 0; i <= n; i++) {
+//     let m = "";
+
+//     for (let j = 0; j < i; j++) {
+//         m = m + i+" ";
+//     }
+//     console.log(m)
+// }
+
+//5)
+// 1, 2, 3, 4, 5
+// 1, 2, 3, 4
+// 1, 2, 3
+// 1, 2
+// 1
+
+
+for (let i = 5; i > 0; i--) {
+    let x = "";
+    for (let j = 0; j < i; j++) {
+        x = x + (j + 1) + " "
+    }
+    console.log(x);
+}
