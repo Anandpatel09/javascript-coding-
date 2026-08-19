@@ -183,10 +183,51 @@
 // 1
 
 
+// for (let i = 5; i > 0; i--) {
+//     let x = "";
+//     for (let j = 0; j < i; j++) {
+//         x = x + (j + 1) + " "
+//     }
+//     console.log(x);
+// }
+
+//6)
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+
+// for (let i = 5; i > 0; i--) {
+//     let x = "";
+//     for (let j = 0; j < i; j++) {
+//         x = x + "*" + " "
+//     }
+//     console.log(x);
+// }
+
+
+//7)
+// - - - - *
+// - - - * *
+// - - * * *
+// - * * * *
+// * * * * *
+
+
+let a = 5;
+let d = 1;
 for (let i = 5; i > 0; i--) {
-    let x = "";
+    let b = ""
+    let c = ""
     for (let j = 0; j < i; j++) {
-        x = x + (j + 1) + " "
+        b = b + " ";
     }
-    console.log(x);
+
+    for (let k = 1; k <= d; k++) {
+        c = c + "*";
+    }
+    d = d + 1;
+    console.log(b, c)
+
 }
