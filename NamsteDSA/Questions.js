@@ -214,20 +214,39 @@
 // - * * * *
 // * * * * *
 
+//my solution
+// let a = 10;
+// let d = 1;
+// for (let i = a; i > 0; i--) {
+//     let b = ""
+//     let c = ""
+//     for (let j = 0; j < i - 1; j++) {
+//         b = b + " ";
+//     }
 
-let a = 5;
-let d = 1;
-for (let i = 5; i > 0; i--) {
-    let b = ""
-    let c = ""
-    for (let j = 0; j < i; j++) {
-        b = b + " ";
+//     for (let k = 1; k <= d; k++) {
+//         c = c + "*";
+//     }
+//     d = d + 1;
+//     console.log(b, c)
+
+// }
+
+//Akshay saini's solution
+
+
+let n = 5;
+
+for (let i = 0; i < n; i++) {
+    let row = "";
+    //adding empty spaces
+    for (let j = 0; j < n - (i + 1); j++) {
+        row = row + " ";
     }
-
-    for (let k = 1; k <= d; k++) {
-        c = c + "*";
+    //adding stars
+    for (let k = 0; k < i + 1; k++) {
+        row = row + "*";
     }
-    d = d + 1;
-    console.log(b, c)
-
+    console.log(row)
 }
+
