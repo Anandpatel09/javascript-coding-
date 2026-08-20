@@ -235,18 +235,87 @@
 //Akshay saini's solution
 
 
-let n = 5;
+// let n = 5;
 
-for (let i = 0; i < n; i++) {
-    let row = "";
-    //adding empty spaces
-    for (let j = 0; j < n - (i + 1); j++) {
-        row = row + " ";
+// for (let i = 0; i < n; i++) {
+//     let row = "";
+//     //adding empty spaces
+//     for (let j = 0; j < n - (i + 1); j++) {
+//         row = row + " ";
+//     }
+//     //adding stars
+//     for (let k = 0; k < i + 1; k++) {
+//         row = row + "*";
+//     }
+//     console.log(row)
+// }
+
+
+///8)
+
+// 1
+// 1 0
+// 1 0 1
+// 1 0 1 0
+// 1 0 1 0 1
+// 1 0 1 0 1 0
+
+//my
+
+// let n = 6
+// for (let i = 0; i <= n; i++) {
+//     let row = "";
+//     for (let j = 0; j < i; j++) {
+//         if (j % 2 != 0) {
+//             row = row + "0"
+//         }
+//         else {
+//             row = row + "1"
+//         }
+//     }
+//     console.log(row);
+// }
+// let n = 6
+
+// akshay
+
+// let n = 9;
+// for (let i = 0; i < n; i++) {
+//     let row = "";
+//     let toggle = 1;
+//     for (let j = 0; j < i; j++) {
+//         row = row + toggle
+//         if (toggle == 1) {
+//             toggle = 0
+//         }
+//         else {
+//             toggle = 1
+//         }
+
+//     }
+//     console.log(row);
+
+// }
+
+
+// write a fnction to count number of didgit
+
+
+function countDigit(x) {
+    //corner case if the number is 0
+
+    if (x == 0) return 1;
+    let count = 0;
+
+    //corner case if the number is negative
+    let num = Math.abs(x);
+
+
+    while (num > 0) {
+        num = Math.floor(num / 10)
+        count++;
     }
-    //adding stars
-    for (let k = 0; k < i + 1; k++) {
-        row = row + "*";
-    }
-    console.log(row)
+    return count;
 }
-
+let a = -357
+console.log(countDigit(a))
